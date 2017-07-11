@@ -1,0 +1,18 @@
+seq = "ATGAAATACGTA"
+acount = 0
+tcount = 0
+ccount = 0
+gcount = 0
+for i in seq:
+    if i == "A":
+        acount = acount +1
+    if i == "T":
+        tcount = tcount + 1
+    if i == "C":
+        ccount = ccount +1
+    if i == "G":
+        gcount = gcount + 1
+print acount
+print tcount
+print ccount
+print gcount
