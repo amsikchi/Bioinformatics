@@ -1,0 +1,9 @@
+a = open("/share/data/states.txt" )
+D = dict()
+lines = a.readlines()
+for i in lines:
+   x = i.split()
+   D[x[0]] = x[1]
+   if len(x) > 2:
+     D[x[0]] = x[1] + x[2]
+print D
