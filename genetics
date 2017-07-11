@@ -1,0 +1,15 @@
+a = open("/share/data/genetic-code.txt")
+D = dict()
+lines = a.readlines()
+for i in lines:
+   x = i.split()
+   D[x[0]] = x[1]
+
+
+b = open("/share/data/adh/ALDH.txt")
+line = b.readline()
+line = line.strip()
+for i in range(0, len(line), 3):
+    codon = D[line[i:i+3]]
+    print codon
+
