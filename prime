@@ -1,0 +1,8 @@
+import math
+x = raw_input()
+x = int(x)
+s = True
+for i in range(2, int(math.sqrt(x))):
+    if x%i == 0:
+       s = False
+print s
